@@ -569,8 +569,8 @@ export interface ApiRecipeRecipe extends Struct.CollectionTypeSchema {
       'oneToMany',
       'api::saved-recipe.saved-recipe'
     >;
-    serving: Schema.Attribute.Integer;
-    substitution: Schema.Attribute.JSON;
+    servings: Schema.Attribute.Integer;
+    substitutions: Schema.Attribute.JSON;
     tips: Schema.Attribute.JSON;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;

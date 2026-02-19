@@ -83,16 +83,10 @@
     "cookTime": {
       "type": "integer"
     },
-    "serving": {
-      "type": "integer"
-    },
     "nutrition": {
       "type": "json"
     },
     "tips": {
-      "type": "json"
-    },
-    "substitution": {
       "type": "json"
     },
     "saved_recipes": {
@@ -100,6 +94,12 @@
       "relation": "oneToMany",
       "target": "api::saved-recipe.saved-recipe",
       "mappedBy": "recipe"
+    },
+    "servings": {
+      "type": "integer"
+    },
+    "substitutions": {
+      "type": "json"
     }
   }
 }
